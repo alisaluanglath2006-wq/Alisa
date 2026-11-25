@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân</title>
+    <!-- Liên kết tới file CSS riêng -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- THANH MENU TRÊN CÙNG -->
+    <header>
+        <div class="container nav-container">
+            <a href="#trang-chu" class="logo">My Portfolio</a>
+            <nav>
+                <ul>
+                    <li><a href="#trang-chu">Trang chủ</a></li>
+                    <li><a href="#gioi-thieu">Giới thiệu</a></li>
+                    <li><a href="#so-thich">Sở thích</a></li>
+                    <li><a href="#lien-he">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PHẦN 1: TRANG CHỦ (ẢNH 1) -->
+    <section id="trang-chu" class="hero">
+        <div class="container hero-box">
+            <div class="hero-text">
+                <span class="badge">Xin chào!</span>
+                <h1>Mình là <span>Alisa</span></h1>
+                <a href="#lien-he" class="btn">Liên hệ với mình</a>
+            </div>
+            <div class="hero-img">
+                <!-- Thay tên file anh1.jpg bằng tên ảnh thật của bạn -->
+                <img src="c:\Users\hpwin\Downloads\WhatsApp Image 2026-11-23 at 17.32.16.jpeg" alt="Ảnh đại diện trang chủ">
+            </div>
+        </div>
+    </section>
+
+    <!-- PHẦN 2: GIỚI THIỆU (ẢNH 2) -->
+    <section id="gioi-thieu" class="section-cream-dark">
+        <div class="container">
+            <h2 class="section-title">Giới thiệu bản thân</h2>
+            <div class="about-box">
+                <div class="about-img">
+                    <!-- Thay tên file anh2.jpg bằng tên ảnh thật của bạn -->
+                    <img src="c:\Users\hpwin\Downloads\WhatsApp Image 2026-11-23 at 17.47.45.jpeg" alt="Ảnh giới thiệu bản thân">
+                </div>
+                <div class="about-text">
+                    <h3>Một chút về mình</h3>
+                    <p>Hiện tại mình là sinh viên đại học chuyên ngành Công nghệ thông tin. (UI/UX).</p>
+                    <ul class="info-list">
+                        <li><strong>Họ và tên:</strong>Luanglath Alisa</li>
+                        <li><strong>Trường học:</strong>Trường Đại Học vinh</li>
+                        <li><strong>Chuyên ngành:</strong> Công nghệ thông tin</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHẦN 3: SỞ THÍCH (ẢNH 3) -->
+    <section id="so-thich" class="hobbies">
+        <div class="container">
+            <h2 class="section-title">Sở thích cá nhân</h2>
+            <div class="hobby-box">
+                <div class="hobby-list">
+                    <div class="hobby-card">
+                        <h3>📸 Chụp ảnh đời thường</h3>
+                        <p>Lưu giữ những khoảnh khắc đẹp trong cuộc sống hằng ngày, phong cảnh thiên nhiên và những góc quán cà phê yên tĩnh.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <h3>🎧 Nghe nhạc & Đọc sách</h3>
+                        <p>Thư giãn sau giờ học căng thẳng bằng những bản nhạc nhẹ nhàng và đọc sách phát triển bản thân.</p>
+                    </div>
+                </div>
+                <div class="hobby-img">
+                    <!-- Thay tên file anh3.jpg bằng tên ảnh thật của bạn -->
+                    <img src="c:\Users\hpwin\Downloads\WhatsApp Image 2026-11-23 at 17.30.01.jpeg" alt="Ảnh sở thích cá nhân">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHẦN 4: LIÊN HỆ -->
+    <section id="lien-he" class="section-cream-dark">
+        <div class="container">
+            <h2 class="section-title">Liên hệ</h2>
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h3>Thông tin kết nối</h3>
+                    <p>Nếu bạn muốn trao đổi thêm về học tập hoặc giao lưu kết bạn, đừng ngần ngại nhắn tin cho mình nhé!</p>
+                    <p><strong>Email:</strong> alisaluanglath2006@gmail.com</p>
+                    <p><strong>Facebook:</strong> Alisa luanglath</p>
+                    <p><strong>Instagram:</strong> p_papao</p>
+                </div>
+
+                <!-- Form liên hệ HTML thuần -->
+                <form class="contact-form" action="#" method="post">
+                    <label for="name">Tên của bạn:</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập tên của bạn..." required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Nhập email của bạn..." required>
+
+                    <label for="message">Lời nhắn:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Viết lời nhắn tại đây..." required></textarea>
+
+                    <button type="submit" class="btn">Gửi tin nhắn</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHÂN TRANG -->
+    <footer>
+        <p>&copy; 2026 Portfolio Cá Nhân - Thiết kế bằng HTML & CSS</p>
+    </footer>
+
+</body>
+</html>

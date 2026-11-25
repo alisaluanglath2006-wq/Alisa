@@ -1,0 +1,319 @@
+/* CÀI ĐẶT CHUNG & BẢNG MÀU TONE KEM */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Cuộn trang mượt mà khi bấm menu */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FAF6F0; /* Nền kem sáng */
+    color: #4A3F35;            /* Chữ nâu đậm dễ đọc */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-cream-dark {
+    background-color: #F2EAE0; /* Nền kem trầm hơn để phân tách các phần */
+}
+
+section {
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    color: #5C4632;
+    margin-bottom: 40px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #C89B7B;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* THANH MENU (HEADER) */
+header {
+    background-color: #FFFDF9;
+    border-bottom: 1px solid #E6DCD0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8C6239;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4A3F35;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #B07D56;
+}
+
+/* NÚT BẤM CHUNG */
+.btn {
+    display: inline-block;
+    background-color: #B07D56;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #8C6239;
+}
+
+/* PHẦN 1: TRANG CHỦ */
+.hero-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #EADBC8;
+    color: #7A5434;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #3E3228;
+}
+
+.hero-text h1 span {
+    color: #B07D56;
+}
+
+.hero-text p {
+    margin-bottom: 25px;
+    color: #6B5D50;
+}
+
+.hero-img img {
+    width: 280px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 6px solid #FFFDF9;
+    box-shadow: 0 8px 20px rgba(92, 70, 50, 0.12);
+}
+
+/* PHẦN 2: GIỚI THIỆU */
+.about-box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-img img {
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 5px solid #FFFDF9;
+    box-shadow: 0 6px 16px rgba(92, 70, 50, 0.1);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    font-size: 22px;
+    color: #8C6239;
+    margin-bottom: 12px;
+}
+
+.about-text p {
+    margin-bottom: 18px;
+}
+
+.info-list {
+    list-style: none;
+    background-color: #FFFDF9;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #E6DCD0;
+}
+
+.info-list li {
+    margin-bottom: 8px;
+}
+
+.info-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* PHẦN 3: SỞ THÍCH */
+.hobby-box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hobby-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hobby-card {
+    background-color: #FFFDF9;
+    padding: 18px 22px;
+    border-radius: 12px;
+    border: 1px solid #E6DCD0;
+}
+
+.hobby-card h3 {
+    font-size: 18px;
+    color: #8C6239;
+    margin-bottom: 6px;
+}
+
+.hobby-img img {
+    width: 270px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 5px solid #FFFDF9;
+    box-shadow: 0 6px 16px rgba(92, 70, 50, 0.1);
+}
+
+/* PHẦN 4: LIÊN HỆ */
+.contact-box {
+    display: flex;
+    gap: 40px;
+    background-color: #FFFDF9;
+    padding: 35px;
+    border-radius: 16px;
+    border: 1px solid #E6DCD0;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 22px;
+    color: #8C6239;
+    margin-bottom: 12px;
+}
+
+.contact-info p {
+    margin-bottom: 12px;
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    border: 1px solid #D8CBB8;
+    border-radius: 8px;
+    background-color: #FAF6F0;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #B07D56;
+}
+
+/* CHÂN TRANG */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #E6DCD0;
+    color: #5C4632;
+    font-size: 14px;
+}
+
+/* TƯƠNG THÍCH MÀN HÌNH ĐIỆN THOẠI (RESPONSIVE) */
+@media (max-width: 768px) {
+    .hero-box,
+    .about-box,
+    .hobby-box,
+    .contact-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-list,
+    .hobby-card,
+    .contact-form {
+        text-align: left;
+    }
+
+    nav ul {
+        gap: 15px;
+        font-size: 14px;
+    }
+}
